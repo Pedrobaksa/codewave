@@ -1,0 +1,644 @@
+/* =========================
+   RESET CSS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b193a;
+    color:#e1e1e6;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    padding:100px 0;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+::selection{
+    background:#00C896;
+    color:#fff;
+}
+
+h2{
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+h3{
+    margin:20px 0 10px;
+}
+
+p{
+    line-height:1.7;
+}
+
+/* =========================
+        HEADER
+========================= */
+.navbar {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               gap: 35px;
+
+}
+
+.navbar ul {
+               display: flex;
+               list-style: none;
+               gap: 25px;
+}
+
+.navbar a {
+               color: #e1e1e6;
+               text-decoration: none;
+               font-weight: 500;
+               transition: 0.3s;
+
+}
+
+.navbar a:hover {
+    color: #00C896;
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #00C896;
+}
+
+.btn-orcamento {
+               background-color: #00C896;
+               color: #ffffff;
+               padding: 14px 28px;
+               border-radius: 8px;
+               display: flex;
+                box-shadow: 0 6px 18px rgba(0, 200, 150, 0.25);
+                cursor: pointer;
+}
+
+.btn {
+               background-color: #00C896;
+               color: #ffffff;
+               padding: 12px 24px;
+               border-radius: 8px;
+                box-shadow: 0 6px 18px rgba(0, 200, 150, 0.25);
+                cursor: pointer;
+                text-decoration: none;
+                transition: all  .3s ease;
+}
+
+.btn,
+.btn-orcamento,
+.btn-projeto,
+.btn-card{
+    transition: all .3s ease;
+}
+
+.btn:hover,
+.btn-orcamento:hover,
+.btn-projeto:hover,
+.btn-card:hover{
+    transform: translateY(-3px);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.hero-content {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               text-align: center;
+               padding: 120px 20px;
+               
+}
+
+.hero-content h1 {
+               margin-bottom: 15px;
+               font-size: 2.8rem;
+}
+
+.hero-content p {
+               margin-bottom: 30px;
+               max-width: 600px;
+}
+
+.hero-buttons {
+               display: flex;
+               gap: 20px;
+               justify-content: center;
+               padding: 14px 28px;
+               
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+    
+    
+    
+
+
+
+
+.sobre-texto {
+    flex: 1;
+    max-width: 550px;
+    padding: 100px 0;
+    
+
+}
+
+.sobre-imagem {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+      
+   
+
+}
+
+.sobre-imagem img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* =========================
+        SERVIÇOS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    
+}
+
+.card {
+    background-color: #13295c;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 12px rgba(0,200,150,.20);
+    min-height: 260px;
+    
+    
+}
+
+.servicos-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 200, 150, 0.25);
+
+}
+
+.btn-card {
+    text-decoration: none;
+    transform: scale(1.05);
+     background-color: #00C896;
+     color: #ffffff;
+     padding: 1px 20px;
+     border-radius: 4px;
+     box-shadow: 0 6px 18px rgba(0, 200, 150, 0.25);
+
+}
+
+/* =========================
+        PROJETOS
+========================= */
+
+.projetos-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    
+   
+}
+
+.cards-projetos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+
+}
+
+.card-projeto {
+    background-color: #13295c;
+    padding: 25px;
+    border-radius: 15px;
+   transition: transform 0.3s ease;
+    
+
+}
+
+
+
+.btn-projeto {
+     transform: scale(1.05);
+     background-color: #00C896;
+     color: #ffffff;
+     padding: 1px 20px;
+     border-radius: 4px;
+     box-shadow: 0 6px 18px rgba(0, 200, 150, 0.25);
+     text-decoration: none;
+                
+}
+.projeto-imagem img {
+         width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:transform .3s ease;
+    
+
+}
+
+.card-projeto:hover .projeto-imagem img {
+    transform: scale(1.05);
+}
+
+.projeto-imagem{
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.card-projeto:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,200,150,.20);
+}
+
+.projeto-links{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.card-projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 200, 150, 0.25);
+
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tecnologias span {
+    background-color: #0b193a;
+    color: #00C896;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid #00C896;
+}
+
+/* =========================
+        CONTATO
+========================= */
+
+
+
+.contato-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contato-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 60px;
+}
+
+.contato-texto{
+    flex: 2;
+}
+
+.contato-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.contato-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-self: stretch;
+}
+
+.contato-form,
+.contato-info{
+    background: #13295c;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 15px;
+    background: #1d356e;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-group textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+
+.info-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-link{
+    color: #e1e1e6;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.info-link:hover{
+    color: #00C896;
+}
+
+/* =========================
+        FOOTER
+========================= */
+
+.footer{
+    background-color: #13295c;
+    padding: 60px 0 30px;
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.footer-links ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li{
+    margin-bottom: 12px;
+}
+
+.footer-links a{
+    color:#e1e1e6;
+    text-decoration:none;
+    font-weight:500;
+    transition:color .3s ease;
+}
+
+.footer-links a:hover{
+    color:#00C896;
+}
+
+.footer-links h3,
+.footer-contato h3{
+    color: #00C896;
+    margin-bottom: 20px;
+}
+
+.footer-logo{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-logo span{
+    color: #00C896;
+}
+
+.footer-copy{
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.15);
+    text-align: center;
+}
+
+
+.footer-copy p{
+    color: #bfc5d2;
+    font-size: 0.9rem;
+}
+
+.footer-copy{
+    width: 100%;
+}
+/* =========================
+      SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0b193a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00C896;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#00e6ac;
+}
+
+
+/* =========================
+        RESPONSIVIDADE
+========================= */
+
+
+@media (max-width: 768px) { 
+
+    .navbar{
+        gap:20px;
+        padding:20px 0;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .logo{
+        font-size:2.2rem;
+    }
+
+    .btn-orcamento{
+        width:100%;
+        justify-content:center;
+    }
+
+    .hero-content{
+        padding:80px 20px;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .sobre-section .container{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .sobre-texto{
+        max-width:100%;
+        padding:0;
+    }
+
+    .sobre-imagem img{
+        max-width:350px;
+    }
+.cards{
+    grid-template-columns: 1fr;
+}
+
+.cards-projetos {
+    grid-template-columns: 1fr;
+}
+
+.contato-content {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer .container {
+    flex-direction: column;
+    gap: 40px;
+ }
+.card, 
+.card-projeto,
+.contato-form,
+.contato-info{
+    width:100%;
+}
+.footer .container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.footer-logo,
+.footer-links,
+.footer-contato{
+    width: 100%;
+}
+
+.footer-links ul{
+    padding: 0;
+}
+
+.footer-copy{
+    margin-top: 20px;
+    text-align: center;
+}
+/* Footer */
+
+.footer .container{
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+}
+
+.footer-logo,
+.footer-links,
+.footer-contato{
+    width: 100%;
+}
+
+.footer-copy{
+    grid-column: 1;
+    margin-top: 20px;
+}
+
+ }
+ 
